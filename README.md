@@ -30,3 +30,10 @@ sensor de humedad hecho por Abrigo, Ramallo y Ruarte (las mejores del mundo obvi
 *Como:* Amante de las plantas de interior que suele olvidarse de regarlas a tiempo.
 *Quiero:* Que el sistema emita una alerta visual y sonora cuando la humedad del suelo baje de un nivel crítico.
 *Para que:* Pueda identificar rápidamente cuándo la planta necesita agua y evitar que se seque o muera.
+
+```mermaid
+graph TD
+  A[avisar cuando la planta esté sin agua] --> B{¿La planta tiene suficiente agua?}
+  B -->|si| C[dejar led apagado]
+  B -->|No| D[encender led]
+```
