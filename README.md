@@ -33,7 +33,7 @@ sensor de humedad hecho por Abrigo, Ramallo y Ruarte (las mejores del mundo obvi
 
 ```mermaid
 graph TD
-  A[avisar cuando la planta esté sin agua] --> B{¿La planta tiene suficiente agua?}
-  B -->|si| C[dejar led apagado]
-  B -->|No| D[encender led]
+  A[avisar cuando la planta esté sin agua] --> B{¿Cuanta humedad hay en la tierra?}
+  B -->|humedad > 500 | C[dejar led apagado]
+  B -->|humedad < 500 | D[encender led]
 ```
